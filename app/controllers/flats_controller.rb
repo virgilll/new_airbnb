@@ -23,6 +23,6 @@ class FlatsController < ApplicationController
   private
 
   def flat_params
-    params.require(:title, :address, :dates, :price, :description, :user_id) # not sure if it works.
+    params.require(:title, :address, :dates, :price, :description)
   end
 end
