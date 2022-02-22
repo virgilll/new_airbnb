@@ -15,22 +15,20 @@
   <body>
   <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
   <div class="container-fluid" style= "padding: 10px;">
-    <a class="navbar-brand" href="#">
-      <img src="https://cdn-icons-png.flaticon.com/128/1946/1946488.png"/>
-    </a>
+
+     <%= link_to root_path do %>
+      <img src="https://cdn-icons-png.flaticon.com/128/1946/1946488.png" style="height:30px;">
+     <% end %>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto">
-          <li class="nav-item active" style= "padding-right: 20px;" style="padding-top:8px;">
-            <%= link_to "Home", root_path %>
-          </li>
           <li class="nav-item" style= "padding-right: 20px;" style="padding-top:8px;">
-            <%= link_to "Log In", new_user_session_path %>
+            <%= link_to "Log In", new_user_session_path, style:"text-decoration:none; color:gray;" %>
           </li>
            <li class="nav-item" style= "padding-right: 20px;" style="padding-top:8px;">
-            <%= link_to "Sign up", new_user_registration_path %>
+            <%= link_to "Sign up", new_user_registration_path, style:"text-decoration:none; color:gray;"%>
           </li>
           <li class="nav-item dropdown">
             <img class="avatar dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="https://kitt.lewagon.com/placeholder/users/ssaunier" />
