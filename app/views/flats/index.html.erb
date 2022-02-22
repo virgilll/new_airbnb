@@ -1,31 +1,24 @@
-<div class="banner" style="d:flex; justify-content:center; text-align:center;">
-  <h1>Flats</h1>
+
+
+<div class="banner d-flex justify-content-center">
+  <h1>Avaliable Flats</h1>
 </div>
 <div class="container">
-      <div class="row" >
-        <% @flats.each do |flat| %>
-          <div class="drone-cards col-sm-6 mb-4 m-3">
-          <%= link_to flat.name flat_path(flat), class: "text-decoration:none" do %>
-            <div class="drone-cards-info">
-              <%= flat.description %>
-            <!-- <p>Short description here!</p> -->
-          </div>
-        </div>
-        <div class="drone-cards col-sm-6 mb-4 m-3">
-          <%# <img src='images/2.jpeg'> %>
+  <div class="row" >
+    <% @flats.each do |flat| %>
+      <div class="col-sm-4 mt-3">
+        <div class="drone-cards mx-3 h-100">
+          <img src="https://images.unsplash.com/photo-1591825729269-caeb344f6df2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjl8fGx1eHVyeSUyMGFwYXJ0bWVudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60">
           <div class="drone-cards-info">
-            <h2>flat info</h2>
-            <!-- <p>Short description here!</p> -->
-          </div>
-        </div>
-        <div class="drone-cards col-sm-6 mb-4 m-3">
-          <%# <img src='images/3.jpeg'> %>
-          <div class="drone-cards-info">
-            <h2>flat info</h2>
-            <!-- <p>Short description here!</p> -->
+            <%= link_to flat.title, flat_path(flat), class: "text-decoration-none" %>
+            <p><%= flat.description %></p>
+          <!-- <p>Short description here!</p> -->
           </div>
         </div>
       </div>
+    <% end %>
+  </div>
+</div>
 
   <%# need to link to show page on each thing  %>
 <%# <div class="container justify-content-center">
