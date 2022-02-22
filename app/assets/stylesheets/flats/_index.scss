@@ -1,0 +1,23 @@
+.drone-cards {
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  width: 375px;
+  align-items: center;
+  padding: 0px;
+}
+
+.drone-cards img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.drone-cards-info {
+  padding-bottom: 15px;
+  margin-left: 10px;
+  padding: 16px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}

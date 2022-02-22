@@ -1,9 +1,33 @@
 <div class="banner" style="d:flex; justify-content:center; text-align:center;">
-  <h1>flats</h1>
+  <h1>Flats</h1>
 </div>
+<div class="container">
+      <div class="row" >
+        <% @flats.each do |flat| %>
+          <div class="drone-cards col-sm-6 mb-4 m-3">
+          <%= link_to flat.name flat_path(flat), class: "text-decoration:none" do %>
+            <div class="drone-cards-info">
+              <%= flat.description %>
+            <!-- <p>Short description here!</p> -->
+          </div>
+        </div>
+        <div class="drone-cards col-sm-6 mb-4 m-3">
+          <%# <img src='images/2.jpeg'> %>
+          <div class="drone-cards-info">
+            <h2>flat info</h2>
+            <!-- <p>Short description here!</p> -->
+          </div>
+        </div>
+        <div class="drone-cards col-sm-6 mb-4 m-3">
+          <%# <img src='images/3.jpeg'> %>
+          <div class="drone-cards-info">
+            <h2>flat info</h2>
+            <!-- <p>Short description here!</p> -->
+          </div>
+        </div>
+      </div>
 
-
-
+  <%# need to link to show page on each thing  %>
 <%# <div class="container justify-content-center">
     <h1>flats</h1>
       <div class="row" >
