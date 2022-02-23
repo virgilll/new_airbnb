@@ -16,9 +16,11 @@
             <%= link_to "Sign up", new_user_registration_path, style:"text-decoration:none; color:gray;"%>
           </li>
           <li class="nav-item dropdown">
-            <img class="avatar dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="https://kitt.lewagon.com/placeholder/users/ssaunier" />
+            <img class="avatar dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS52y5aInsxSm31CvHOFHWujqUx_wWTS9iM6s7BAm21oEN_RiGoog" />
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">My Profile</a>
+            <% if current_user %>
+              <%= link_to "My Profile", user_path(current_user)%>
+            <% end %>
               <a class="dropdown-item" href="#">Settings</a>
             </div>
           </li>
