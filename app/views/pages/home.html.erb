@@ -4,9 +4,12 @@
   <div class="changedcontainer">
     <h1 style="color:white; padding-top:30px; margin-left:15px;">Our app brings <strong>local flats</strong> to <strong>travelers and cool people</strong></h1>
     <p style="color:white; font-size:19px; padding-top:30px; margin-left:50px;">Change your life by taking part in a local experience</p>
-    <p style="color:white; font-size:19px; padding-top:30px; padding-bottom:30px; margin-left:50px;">Start Looking for flats now</p>
-    <%= link_to "Start Searching by City Name", flats_path, class:"btn btn-light border-radius:50px; margin-left:50px;"%>
-
+    <p style="color:white; font-size:19px; padding-top:30px; padding-bottom:15px; margin-left:50px;">Start Looking for flats now</p>
+    <form action= <%= flats_path %> method = "GET" style="margin-left:45px; border-radius:50px; font-size:1rem; line-height:30px;>
+      <label for="search city"></label><br>
+      <input type="text" id="city" name="city" value="" placeholder="search for a city">
+ <input type="submit" value="Submit" class="btn btn-light" style="line-height:22px;>
+    </form>
     <!-- f.input :foobar, :as => :string -->
 
 
