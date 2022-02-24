@@ -1,11 +1,12 @@
+
 <body>
-  <div class="middle of page" style="display:relative;">
+  <div class="middleofpage">
     <div>
       <h1 style="display:absolute; margin-left: 850px; margin-top:30; padding-top:50px;"> Your Flat: <%=@flat.title%> </h1>
     </div>
-    <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1469796466635-455ede028aca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2970&q=80); margin-top:80px; display:relative; height:auto; background-size:cover; opacity:0.7; height: 70vh;  margin-inline: auto">
-      <div class="flex; align-items: flex-start">
-        <div class="information box" style="background: ghostwhite; position:absolute; top:100px;left: 75px; font-size: 16px; padding: 5px; border: 1px solid lightgray; width:325px; height: 250px; border-radius:25px; padding-left:10px;">
+    <div class="card">
+      <div id="hi">
+        <div class="informationbox">
           &#9432; Information.
           <p>
             <strong>Title of Flat:</strong>
@@ -27,35 +28,37 @@
           </p>
         </div>
 
-        <div class="price box" style="background: ghostwhite; font-size: 16px;position:absolute; left: 75px; top:380px; border: 1px solid lightgray; width:325px; height: 250px; border-radius:25px; padding-left:10px; ">
+        <div class="pricebox">
 
           <form action="reservation.php" method="post" >
-            <div class="elem-group inlined">
-              <label for="adult" style="padding-bottom: 22px; padding-top:15px; margin-left: 60px;"> <strong> Guests </strong></label>
+            <div class="elem-group-inlined">
+              <label for="adult"> <strong> Guests </strong></label>
               <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
             </div>
 
-            <div class="elem-group inlined">
+            <div class="elem-group-inlined">
               <label for="checkin-date" style="padding-bottom: 22px; margin-left: 10px;"> <strong> Check-in Date </strong></label>
               <input type="date" id="checkin-date" name="checkin" required>
             </div>
 
-            <div class="elem-group inlined">
+            <div class="elem-group-inlined">
               <label for="checkout-date" style="padding-bottom: 30px;">  <strong>Check-out Date </strong></label>
               <input type="date" id="checkout-date" name="checkout" required>
             </div>
             <div>
               <button type="submit" style="padding: 20px; margin-left: 70px; border-radius:20px; background-color:black; color:white; font-weight:bolder;">Book The Flat</button>
             </div>
+
           </form>
+
+
+
         </div>
+          <div id="map"
+        data-markers="<%= @markers.to_json %>"
+        data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
+          </div>
       </div>
     </div>
   </div>
 </body>
-<!-- Middle of page  done -- >
-# can add reviews on the bottom of page
-# below the main picture in the image, can create a list of pictures automatically changing.
-
-
-<1!-- Footer begins -->
