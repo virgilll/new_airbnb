@@ -114,3 +114,18 @@
                 </div>
             </form>
         </div>
+
+
+<div class="confirmed booking">
+    <%= current_user.flats  %> - <%= current_user.received_bookings %> - <%= current_user.bookings %>
+    <% current_user.received_bookings.each do |booking| %>
+      <%= link_to "confirm booking", change_status_booking_path(booking, status:"accepted"), method: :patch %>
+       <%= link_to "reject booking", change_status_booking_path(booking, status:"rejected"), method: :patch %>
+       <% end %>
+    <!-- current_user.flats shows the listings you created as a user. Received_bookings will show who sent request for your flat.-->
+    <!-- this is a button that should be named confirm booking that will change the result to accepted-->
+    <!-- reject button-->
+</div>
+
+
+<!-- for each booking, do a loop that will give you the option to reject or accept-->
