@@ -6,17 +6,21 @@
   font-family: arial;
   margin-top: 5px;
   padding: 30px;
-  height: 65vh;
+  margin: auto30px;
+  height:55vh;
+  opacity:0.7;
+  border-radius: 45px;
   overflow-wrap: break-word;
 }
-
-.user-card-img {
-  height: 100px;
-}
-
 .title {
   color: grey;
   font-size: 18px;
+}
+
+.user-card img{
+  height:20vh;
+  opacity:0.9;
+  border-radius:45px;
 }
 
 button {
@@ -42,7 +46,19 @@ button:hover, a:hover {
   opacity: 0.7;
 }
 
-.background{
+.background-user-profile{
   background-image: url(https://images.unsplash.com/photo-1469796466635-455ede028aca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2970&q=80);
   background-size: cover;
+}
+.user-bookings{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 1000px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  margin-top: 5px;
+  padding: 30px;
+  opacity:0.7;
+  border-radius: 45px;
+  overflow-wrap: break-word;
 }
