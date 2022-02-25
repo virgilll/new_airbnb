@@ -4,12 +4,11 @@ display:relative;
 
 .flat-card{
   background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1469796466635-455ede028aca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2970&q=80);
-  margin-top:80px;
+  padding-top:80px;
   display:relative;
-  height:auto;
   background-size:cover;
   opacity:0.7;
-  height: 70vh;
+  min-height: 70vh;
 }
 #hi{
   margin-left: 55px;
@@ -17,24 +16,20 @@ display:relative;
 }
 .informationbox{
   background: ghostwhite;
-  top:100px;
-  left: 75px;
+
   font-size: 16px;
-  padding: 5px;
+  padding: 25px;
   border: 1px solid lightgray;
-  width:325px;
-  height: 250px;
+
   border-radius:25px;
   padding-left:10px;
 }
-.pricebox{
+
+.new_booking {
   background: ghostwhite;
   font-size: 16px;
-  margin-left: 55px;
-  margin-top: 250;
+  padding: 25px;
   border: 1px solid lightgray;
-  width:325px;
-  height: 250px;
   border-radius:25px;
 }
 .elem-group-inlined{
@@ -43,8 +38,6 @@ display:relative;
   margin-left: 60px;
 }
 #map{
-  height:40vh;
+  height:30vh;
   width: 100%;
-  border-radius: 25px;
-  margin-top: 100px;
   }

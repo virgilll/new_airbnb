@@ -1,16 +1,16 @@
 .user-card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
+  max-width: 400px;
   margin: auto;
   text-align: center;
   font-family: arial;
   margin-top: 5px;
   padding: 30px;
   margin: auto30px;
-  height:55vh;
   opacity:0.7;
   border-radius: 45px;
   overflow-wrap: break-word;
+  min-height: 580px;
 }
 .title {
   color: grey;
@@ -49,6 +49,7 @@ button:hover, a:hover {
 .background-user-profile{
   background-image: url(https://images.unsplash.com/photo-1469796466635-455ede028aca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2970&q=80);
   background-size: cover;
+  min-height: 100vh;
 }
 .user-bookings{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -61,4 +62,12 @@ button:hover, a:hover {
   opacity:0.7;
   border-radius: 45px;
   overflow-wrap: break-word;
+  min-height: 580px;
+}
+
+.booking-card {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 2px 2px 2px gray;
+  margin-bottom: 15px;
 }
