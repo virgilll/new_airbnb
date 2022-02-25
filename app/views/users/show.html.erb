@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<div class="background-user-profile">
+<div class="background-user-profile pt-5">
   <div class="container">
     <div class="user-box">
       <div class="user-card" style="background-color:whitesmoke;">
@@ -12,10 +12,20 @@
         <p><button style="border-radius:50px;">Contact</button></p>
       </div>
     </div>
-    <div class="user-bookings">
+    <div class="user-bookings" style="background-color:whitesmoke; margin-left:50px;">
+      <div>
       <h2>Pending Bookings</h2>
+      <% current_user.bookings.each do |booking| %>
+        <div class='booking-card'>
+          <h3><%= booking.flat.title %></h3>
+          <p><%= booking.flat.address %></p>
+          <p><%= booking.start_date %> - <%= booking.end_date %></p>
+        </div>
+        <% end %>
+      </div>
+      <div>
       <h2>Accepted Bookings</h2>
-      <h2>Rejected Bookings</h2>
+      </div>
     </div>
 
   </div>
