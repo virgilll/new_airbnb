@@ -1,0 +1,45 @@
+.sign-up-button {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.su-button {
+  background-color: black;
+  color: white;
+  text-align: left;
+}
+
+.sign-up-form-inputs {
+  width: 100%;
+}
+
+.sign-up{
+  background-image: url(https://images.unsplash.com/photo-1469796466635-455ede028aca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2970&q=80);
+  background-size: cover;
+  height: 100vh;
+  // width: 100vw;
+  z-index: -1;
+  background-repeat: no-repeat;
+  padding-top: 50px;
+  justify-content: center;
+}
+
+.sign-up-form {
+  justify-content: center;
+  display: flex;
+  border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
+  // box-shadow: 20px 20px rgba(0,0,0,.15);
+  // transition: all .4s ease;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  width: 100%;
+  opacity: 0.7;
+}
+
+// .sign-up-form:hover {
+//   border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ;
+//   box-shadow: 10px 10px rgba(0,0,0,.25);
+// }
