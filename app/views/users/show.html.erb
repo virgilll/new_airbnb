@@ -2,32 +2,30 @@
 
 <div class="background-user-profile pt-5">
   <div class="container">
-    <div class="user-box">
-      <div class="user-card" style="background-color:whitesmoke;">
-        <img src="https://philberk.github.io/profile/profilepic.jpeg">
-        <h3>Turkish Menace</h1>
-        <p class=“title”>CEO & Founder, Example</p>
-        <p>Harvard University</p>
-        <p>About Me: A moth goes into a podiatrist’s office, and the podiatrist’s office says,  fairytale and a southern fairytale?  "Once upon a time ..." A southern fairytale begins "Y'all ain't gonna believe this shit ..."
-        <p><button style="border-radius:50px;">Contact</button></p>
-      </div>
-    </div>
-    <div class="user-bookings" style="background-color:whitesmoke; margin-left:50px;">
-      <div>
-      <h2>Pending Bookings</h2>
-      <% current_user.bookings.each do |booking| %>
-        <div class='booking-card'>
-          <h3><%= booking.flat.title %></h3>
-          <p><%= booking.flat.address %></p>
-          <p><%= booking.start_date %> - <%= booking.end_date %></p>
+    <div class="row users">
+      <div class="user-box">
+        <div class="user-card" style="background-color:whitesmoke;">
+          <img src="https://philberk.github.io/profile/profilepic.jpeg">
+          <h3>Turkish Menace</h1>
+          <p class=“title”>CEO & Founder, Example</p>
+          <p>Harvard University</p>
+          <p>About Me: A moth goes into a podiatrist’s office, and the podiatrist’s office says,  fairytale and a southern fairytale?  "Once upon a time ..." A southern fairytale begins "Y'all ain't gonna believe this shit ..."
+          <p><button style="border-radius:50px;">Contact</button></p>
         </div>
-        <% end %>
       </div>
-      <div>
-      <h2>Accepted Bookings</h2>
+      <div class="user-bookings" style="background-color:whitesmoke">
+        <div>
+        <h2>Pending Bookings</h2>
+        <% current_user.bookings.each do |booking| %>
+          <div class='booking-card'>
+            <h3><%= booking.flat.title %></h3>
+            <p><%= booking.flat.address %></p>
+            <p><%= booking.start_date %> - <%= booking.end_date %></p>
+          </div>
+          <% end %>
+        </div>
       </div>
     </div>
-
   </div>
 </div>
 
