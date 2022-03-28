@@ -11,4 +11,4 @@ class User < ApplicationRecord
   validates :last_name, presence: true
   has_many :received_bookings, through: :flats, source: :bookings # received_booking is booking you receive from other people
   has_many :bookings # booking you create for yourself.
-end
+end 
