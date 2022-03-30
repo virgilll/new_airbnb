@@ -32,7 +32,7 @@ cities = ["Barcelona, Spain", "Madrid, Spain", "Paris, France", "Lyon, France", 
   "Montevideo, Urugay", "Sao Paulo, Brazil", "Nairobi, Kenya", "Luanda, Angola", "Marseille, France", "Douala, Cameroon", "Abidjan, Ivory Coast", "Newcastle, England", "Glasgow, Wales", "Belfast, Ireland",
   "Athens, Greece", "Dubrovnik, Croatia", "Kiev, Ukraine", "Tbilisi, Georgia"]
 
-25.times do
+15.times do
   Flat.create!(
     title: Faker::Address.street_name,
     address: cities.sample,
