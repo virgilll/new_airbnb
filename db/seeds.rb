@@ -34,10 +34,10 @@ cities = ["Barcelona, Spain", "Madrid, Spain", "Paris, France", "Lyon, France", 
 
 25.times do
   Flat.create!(
-    title: Faker::Book.title,
+    title: Faker::Address.street_name,
     address: cities.sample,
     price: Faker::Number.within(range: 100..3000),
-    description: Faker::Quote.famous_last_words,
+    description: Faker::Address.community,
     user: users.sample
   )
 end
