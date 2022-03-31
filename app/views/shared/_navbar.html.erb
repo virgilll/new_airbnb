@@ -18,14 +18,15 @@
               <% end %>
           </li>
           <% if user_signed_in? %>
-            <li class="nav-item dropdown">
+            <li class="nav-item-dropdown">
               <img class="avatar dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="https://philberk.github.io/profile/profilepic.jpeg" />
               <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                 <%= link_to "My Profile", user_path(current_user), class: "dropdown-item"%>
+                <%= link_to "Settings", edit_user_registration_path(current_user), class: "dropdown-item"  %>
                 <%= link_to "Log Out",  destroy_user_session_path, class: "dropdown-item", :method => 'delete' %>
                 <a class="dropdown-item" href="#">
                 <% destroy_user_session_path(current_user) %>
-                <a class="dropdown-item" href="#">Settings</a>
+
               </div>
             </li>
           <% end %>
