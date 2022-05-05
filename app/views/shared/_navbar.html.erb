@@ -1,38 +1,28 @@
-<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <div class="container-fluid" style= "padding: 10px;">
+<nav class="bg-white shadow-lg">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex justify-between">
+        <div class="flex space-x-7">
+          <div>
+            <a class="flex items-center py-4 px-2" href="#">
+              <img class="h-8 w-8 mr-2" src="app/assets/images/house.png" alt="">
+              <span class="text-gray-500 font-semibold text-lg hover:text-green-500">Miami Luxury Homes</span>
+            </a>
+          </div>
+        <div class="hidden sm:flex justify-end space-x-1 md:flex items-center space-x-1">
+          <%= link_to "Home", root_path, class:"py-4 px-2 text-gray-500 border-transparent hover:text-green-500 hover:border-green-500 border-b-4 transition-duration-300 font-semibold sm:px-1"%>
+          <% if !user_signed_in? %>
+              <%= link_to "Log In", new_user_session_path, class:"py-4 px-2 text-gray-500 border-transparent hover:text-green-500 hover:border-green-500 border-b-4 transition-duration-300 font-semibold sm:px-1" %>
 
-     <%= link_to root_path do %>
-      <img src="https://cdn-icons-png.flaticon.com/128/1946/1946488.png" style="height:30px;">
-     <% end %>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto">
-          <li class="nav-item" style= "padding-right: 20px;" style="padding-top:8px;">
-            <% if !user_signed_in? %>
-              <%= link_to "Log In", new_user_session_path, style:"text-decoration:none; color:gray;" %>
-          </li>
-           <li class="nav-item" style= "padding-right: 20px;" style="padding-top:8px;">
-              <%= link_to "Sign up", new_user_registration_path, style:"text-decoration:none; color:gray;"%>
-              <% end %>
-          </li>
-          <% if user_signed_in? %>
-            <li class="nav-item-dropdown">
-              <img class="avatar dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="https://philberk.github.io/profile/profilepic.jpeg" />
-              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                <%= link_to "My Profile", user_path(current_user), class: "dropdown-item"%>
-                <%= link_to "Settings", edit_user_registration_path(current_user), class: "dropdown-item"  %>
-                <%= link_to "Log Out",  destroy_user_session_path, class: "dropdown-item", :method => 'delete' %>
-                <a class="dropdown-item" href="#">
-                <% destroy_user_session_path(current_user) %>
-
-              </div>
-            </li>
+              <%= link_to "Sign Up", new_user_registration_path, class:"py-4 px-2 text-gray-500 border-transparent hover:text-green-500 hover:border-green-500 border-b-4 transition-duration-300 font-semibold sm:px-1"%>
           <% end %>
-          <!--li class="nav-item"-->
-          <!--/li-->
-      </ul>
+          <% if user_signed_in? %>
+            <%= link_to "My Profile", user_path(current_user), class:"py-4 px-2 text-gray-500 font-semibold border-transparent hover:text-green-500 hover:border-green-500 border-b-4 transition-duration-300"%>
+            <%= link_to "Settings", edit_user_registration_path(current_user), class:"py-4 px-2 text-gray-500 font-semibold border-transparent hover:text-green-500 hover:border-green-500 border-b-4 transition-duration-300" %>
+            <%= link_to "Log Out", destroy_user_session_path, class:"py-4 px-2 text-gray-500 font-semibold border-transparent hover:text-green-500 hover:border-green-500 border-b-4 transition-duration-300", method: :delete %>
+          <% end %>
+          <a class="py-4 px-2 text-gray-500 font-semibold border-transparent hover:text-green-500 hover:border-green-500 border-b-4 transition-duration-300 sm:px-1" href="#">Contact Us</a>
+        </div>
+      </div>
+      </div>
     </div>
-  </div>
-</div>
+  </nav>
