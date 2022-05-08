@@ -46,7 +46,7 @@ class FlatsController < ApplicationController
   end
 
   def brickell
-    @brickell_flats = Flat.where(address: 'brickell')
+    @brickell_flats = Flat.where(address: 'Brickell')
   end
 
   private
