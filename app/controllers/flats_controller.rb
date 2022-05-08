@@ -37,6 +37,18 @@ class FlatsController < ApplicationController
     end
   end
 
+  def miami_beach
+    @beach_flats = Flat.where(address: 'Miami Beach')
+  end
+
+  def coral_gables
+    @gables_flats = Flat.where(address: 'Coral Gables')
+  end
+
+  def brickell
+    @brickell_flats = Flat.where(address: 'brickell')
+  end
+
   private
 
   def flat_params
