@@ -19,18 +19,7 @@ users = []
   )
 end
 
-cities = ["Barcelona, Spain", "Madrid, Spain", "Paris, France", "Lyon, France", "London, England", "Manchester, England",
-  "Luxembourg, Luxembourg", "Berlin, Germany", "Munich, Germany", "Canberra, Australia", "Wellington, New Zealand",
-  "Lima, Peru", "Washington, United States", "New York, United States", "Lisbon, Portugal", "Oslo, Norway", "Beijing, China",
-  "Tokyo, Japan", "Dijon, France", "Stockholm, Sweden", "Bratislava, Slovakia", "Buenos Aires, Argentina", "Cusco, Peru",
-  "Medellin, Colombia", "Bologna, Italy", "Napoli, Italy", "Caracas, Venezuela", "Moscow, Russia", "Rekjavik, Iceland", "Helsinki, Finland",
-  "Prievidza, Slovakia", "Bilbao, Spain", "Sofia, Bulgaria", "Belgrade, Serbia", "Alger, Algeria", "Cairo, Egypt", "Tunis, Tunisia", "Cape Town, South Affrica",
-  "Istanbul, Turkey", "Niger, Nigeria", "Antananarivo, Madagascar", "Dakar, Senegal", "Macon, France", "Osaka, Japan", "Kyoto, Japan", "New Dehli, India", "Taipei, Taiwan",
-  "Brussels, Belgium", "Valencia, Venezuela", "Valencia, Spain", "Valence, France", "Seoul, South Korea", "Hong Kong, Honk Kong", "Bangkok, Thailand", "Phnom Penh, Cambodia",
-  "Cancun, Mexico", "Tulum, Mexico", "San Cristobal de las casas, Mexico", "Guadalajara, Mexico", "Mexico city, Mexico", "Antigua, Guatemala", "Guatemala city, Guatemala",
-  "San Salvador, Salvador", "San Pedro Sula, Honduras", "Managua, Nicaragua", "Tijuana, Mexico", "San Jose, Costa Rica", "Panama city, Panama", "Bogota, Columbia", "Georgetown, Guyana",
-  "Montevideo, Urugay", "Sao Paulo, Brazil", "Nairobi, Kenya", "Luanda, Angola", "Marseille, France", "Douala, Cameroon", "Abidjan, Ivory Coast", "Newcastle, England", "Glasgow, Wales", "Belfast, Ireland",
-  "Athens, Greece", "Dubrovnik, Croatia", "Kiev, Ukraine", "Tbilisi, Georgia"]
+cities = ["Miami Beach", "Coral Gables", "Brickell"]
 
 15.times do
   Flat.create!(
